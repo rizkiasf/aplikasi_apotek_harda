@@ -1,0 +1,286 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<DOCUMENT Type="Advanced Installer" CreateVersion="22.8" version="22.8" Modules="enterprise" RootPath="." Language="id" Id="{2E8515C0-1E15-432C-8C0F-38C9DCBCD906}">
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiPropsComponent">
+    <ROW Property="AI_BITMAP_DISPLAY_MODE" Value="0"/>
+    <ROW Property="ALLUSERS" Value="1"/>
+    <ROW Property="ARPCOMMENTS" Value="Basis data penginstal ini berisi logika dan data yang dibutuhkan untuk menginstal  [|ProductName]." ValueLocId="*"/>
+    <ROW Property="CurrentJavaProductName" Value="CurrentJavaProductName"/>
+    <ROW Property="Manufacturer" Value="HardaGrupDeveloper.Inc"/>
+    <ROW Property="ProductCode" Value="1057:{E823725E-8A39-4050-A889-6A0208BFABC1} " Type="16"/>
+    <ROW Property="ProductLanguage" Value="1033"/>
+    <ROW Property="ProductName" Value="Aplikasi Apotek Harda"/>
+    <ROW Property="ProductVersion" Value="1.0.1" Options="32"/>
+    <ROW Property="SecureCustomProperties" Value="OLDPRODUCTS;AI_NEWERPRODUCTFOUND"/>
+    <ROW Property="UpgradeCode" Value="{DCC85547-86E9-4D56-B46D-CAB2774670BD}"/>
+    <ROW Property="WindowsType9X" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsType9XDisplay" MultiBuildValue="DefaultBuild:Windows 9x/ME" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT40Display" MultiBuildValue="DefaultBuild:Windows NT 4.0" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT50Display" MultiBuildValue="DefaultBuild:Windows 2000" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5X" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT5XDisplay" MultiBuildValue="DefaultBuild:Windows XP/2003" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+    <ROW Property="WindowsTypeNT60Display" MultiBuildValue="DefaultBuild:Windows Vista/Server 2008" ValueLocId="-"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiDirsComponent">
+    <ROW Directory="APPDIR" Directory_Parent="TARGETDIR" DefaultDir="APPDIR:." IsPseudoRoot="1" DirectoryOptions="3"/>
+    <ROW Directory="SHORTCUTDIR" Directory_Parent="TARGETDIR" DefaultDir="SHORTC~1|SHORTCUTDIR" IsPseudoRoot="1"/>
+    <ROW Directory="TARGETDIR" DefaultDir="SourceDir"/>
+    <ROW Directory="TugasKelompokHarda_Dir" Directory_Parent="APPDIR" DefaultDir="TUGASK~1|Tugas Kelompok(Harda)" DirectoryOptions="3"/>
+    <ROW Directory="apotek_harda_1_Dir" Directory_Parent="src_Dir" DefaultDir="APOTEK~1|apotek_harda" DirectoryOptions="3"/>
+    <ROW Directory="apotek_harda_Dir" Directory_Parent="classes_Dir" DefaultDir="APOTEK~1|apotek_harda" DirectoryOptions="3"/>
+    <ROW Directory="asfa_1_Dir" Directory_Parent="hadi_1_Dir" DefaultDir="asfa" DirectoryOptions="3"/>
+    <ROW Directory="asfa_Dir" Directory_Parent="hadi_Dir" DefaultDir="asfa" DirectoryOptions="3"/>
+    <ROW Directory="build_Dir" Directory_Parent="TugasKelompokHarda_Dir" DefaultDir="build" DirectoryOptions="3"/>
+    <ROW Directory="classes_Dir" Directory_Parent="build_Dir" DefaultDir="classes" DirectoryOptions="3"/>
+    <ROW Directory="dist_Dir" Directory_Parent="TugasKelompokHarda_Dir" DefaultDir="dist" DirectoryOptions="3"/>
+    <ROW Directory="duta_1_Dir" Directory_Parent="kelompok_1_Dir" DefaultDir="duta" DirectoryOptions="3"/>
+    <ROW Directory="duta_Dir" Directory_Parent="kelompok_Dir" DefaultDir="duta" DirectoryOptions="3"/>
+    <ROW Directory="hadi_1_Dir" Directory_Parent="duta_1_Dir" DefaultDir="hadi" DirectoryOptions="3"/>
+    <ROW Directory="hadi_Dir" Directory_Parent="duta_Dir" DefaultDir="hadi" DirectoryOptions="3"/>
+    <ROW Directory="kelompok_1_Dir" Directory_Parent="tugas_1_Dir" DefaultDir="kelompok" DirectoryOptions="3"/>
+    <ROW Directory="kelompok_Dir" Directory_Parent="tugas_Dir" DefaultDir="kelompok" DirectoryOptions="3"/>
+    <ROW Directory="lib_Dir" Directory_Parent="dist_Dir" DefaultDir="lib" DirectoryOptions="3"/>
+    <ROW Directory="nbproject_Dir" Directory_Parent="TugasKelompokHarda_Dir" DefaultDir="NBPROJ~1|nbproject" DirectoryOptions="3"/>
+    <ROW Directory="private_Dir" Directory_Parent="nbproject_Dir" DefaultDir="private" DirectoryOptions="3"/>
+    <ROW Directory="riski_1_Dir" Directory_Parent="asfa_1_Dir" DefaultDir="riski" DirectoryOptions="3"/>
+    <ROW Directory="riski_Dir" Directory_Parent="asfa_Dir" DefaultDir="riski" DirectoryOptions="3"/>
+    <ROW Directory="src_Dir" Directory_Parent="TugasKelompokHarda_Dir" DefaultDir="src" DirectoryOptions="3"/>
+    <ROW Directory="tugas_1_Dir" Directory_Parent="src_Dir" DefaultDir="tugas" DirectoryOptions="3"/>
+    <ROW Directory="tugas_Dir" Directory_Parent="classes_Dir" DefaultDir="tugas" DirectoryOptions="3"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.SideBySideGuidComponent">
+    <ROW Component="APPDIR" Value="{66191784-D0E2-48B7-B23C-6372E8BEB53D}"/>
+    <ROW Component="ProductInformation" Value="{CC810FC9-3358-4965-B0EE-7F7324808A03}"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCompsComponent">
+    <ROW Component="APPDIR" ComponentId="{66191784-D0E2-48B7-B23C-6372E8BEB53D}" Directory_="APPDIR" Attributes="0"/>
+    <ROW Component="AplikasiHarda.exe" ComponentId="{FFEDA9E0-5CED-43DD-8A5B-9297EEB43BA7}" Directory_="APPDIR" Attributes="0" KeyPath="AplikasiHarda.exe"/>
+    <ROW Component="ProductInformation" ComponentId="{CC810FC9-3358-4965-B0EE-7F7324808A03}" Directory_="APPDIR" Attributes="4" KeyPath="Version"/>
+    <ROW Component="README.TXT" ComponentId="{8326CD0D-9169-482C-B25B-EA8FF8F25A73}" Directory_="dist_Dir" Attributes="0" KeyPath="README.TXT" Type="0"/>
+    <ROW Component="SHORTCUTDIR" ComponentId="{62105A4E-F890-4879-A1E4-D50CC0BDAD48}" Directory_="SHORTCUTDIR" Attributes="0"/>
+    <ROW Component="TugasKelompokDutaHadiAsfaRiski.class" ComponentId="{5C82D7DC-0F33-42FE-9B36-ACEF83E63005}" Directory_="riski_Dir" Attributes="0" KeyPath="TugasKelompokDutaHadiAsfaRiski.class" Type="0"/>
+    <ROW Component="TugasKelompokDutaHadiAsfaRiski.java" ComponentId="{5A601820-6508-4A30-9C0C-AE312583D85E}" Directory_="riski_1_Dir" Attributes="0" KeyPath="TugasKelompokDutaHadiAsfaRiski.java" Type="0"/>
+    <ROW Component="bglogin.jpg" ComponentId="{F7360952-08BE-4E5B-8A14-C16877B372A2}" Directory_="apotek_harda_Dir" Attributes="0" KeyPath="bglogin.jpg" Type="0"/>
+    <ROW Component="bglogin.jpg_1" ComponentId="{020B3EC5-1702-4C5C-9D31-6B5FC2B2F7F0}" Directory_="apotek_harda_1_Dir" Attributes="0" KeyPath="bglogin.jpg_1" Type="0"/>
+    <ROW Component="build.xml" ComponentId="{CD44971C-36FA-4B31-B5CB-AC85D43B8C14}" Directory_="TugasKelompokHarda_Dir" Attributes="0" KeyPath="build.xml" Type="0"/>
+    <ROW Component="buildimpl.xml" ComponentId="{7EFD82D2-EF19-412B-A610-48FE83FF2221}" Directory_="nbproject_Dir" Attributes="0" KeyPath="buildimpl.xml" Type="0"/>
+    <ROW Component="builtjar.properties" ComponentId="{D600EBEF-94A2-45DB-A33E-A5879FC4A087}" Directory_="build_Dir" Attributes="0" KeyPath="builtjar.properties" Type="0"/>
+    <ROW Component="jcalendar1.4.jar" ComponentId="{E3D92BCF-93B1-4315-8EAC-C87E9A88C238}" Directory_="lib_Dir" Attributes="0" KeyPath="jcalendar1.4.jar" Type="0"/>
+    <ROW Component="netbeans_automatic_build" ComponentId="{C6F66CBF-2E41-4D3F-A204-34E35877F4D7}" Directory_="classes_Dir" Attributes="0" KeyPath="netbeans_automatic_build" Type="0"/>
+    <ROW Component="private.properties" ComponentId="{AF3A2342-A0AB-4332-9799-EF5EE93A95D9}" Directory_="private_Dir" Attributes="0" KeyPath="private.properties" Type="0"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatsComponent">
+    <ROW Feature="MainFeature" Title="MainFeature" Description="Description" Display="1" Level="1" Directory_="APPDIR" Attributes="0"/>
+    <ATTRIBUTE name="CurrentFeature" value="MainFeature"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFilesComponent">
+    <ROW File="builtjar.properties" Component_="builtjar.properties" FileName="BUILT-~1.PRO|built-jar.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\built-jar.properties" SelfReg="false"/>
+    <ROW File="netbeans_automatic_build" Component_="netbeans_automatic_build" FileName="NETBEA~1|.netbeans_automatic_build" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\.netbeans_automatic_build" SelfReg="false"/>
+    <ROW File="netbeans_update_resources" Component_="netbeans_automatic_build" FileName="NETBEA~2|.netbeans_update_resources" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\.netbeans_update_resources" SelfReg="false"/>
+    <ROW File="bglogin.jpg" Component_="bglogin.jpg" FileName="bg-login.jpg" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\bg-login.jpg" SelfReg="false"/>
+    <ROW File="dashboard_admin1.class" Component_="bglogin.jpg" FileName="DASHBO~1.CLA|dashboard_admin$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\dashboard_admin$1.class" SelfReg="false"/>
+    <ROW File="dashboard_admin2.class" Component_="bglogin.jpg" FileName="DASHBO~2.CLA|dashboard_admin$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\dashboard_admin$2.class" SelfReg="false"/>
+    <ROW File="dashboard_admin3.class" Component_="bglogin.jpg" FileName="DASHBO~3.CLA|dashboard_admin$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\dashboard_admin$3.class" SelfReg="false"/>
+    <ROW File="dashboard_admin4.class" Component_="bglogin.jpg" FileName="DASHBO~4.CLA|dashboard_admin$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\dashboard_admin$4.class" SelfReg="false"/>
+    <ROW File="dashboard_admin.class" Component_="bglogin.jpg" FileName="DASHBO~5.CLA|dashboard_admin.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\dashboard_admin.class" SelfReg="false"/>
+    <ROW File="dashboard_admin.form" Component_="bglogin.jpg" FileName="DASHBO~1.FOR|dashboard_admin.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\dashboard_admin.form" SelfReg="false"/>
+    <ROW File="DatabaseConnection.class" Component_="bglogin.jpg" FileName="DATABA~1.CLA|DatabaseConnection.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\DatabaseConnection.class" SelfReg="false"/>
+    <ROW File="FormUser1.class" Component_="bglogin.jpg" FileName="FORMUS~1.CLA|FormUser$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\FormUser$1.class" SelfReg="false"/>
+    <ROW File="FormUser2.class" Component_="bglogin.jpg" FileName="FORMUS~2.CLA|FormUser$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\FormUser$2.class" SelfReg="false"/>
+    <ROW File="FormUser3.class" Component_="bglogin.jpg" FileName="FORMUS~3.CLA|FormUser$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\FormUser$3.class" SelfReg="false"/>
+    <ROW File="FormUser4.class" Component_="bglogin.jpg" FileName="FORMUS~4.CLA|FormUser$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\FormUser$4.class" SelfReg="false"/>
+    <ROW File="FormUser5.class" Component_="bglogin.jpg" FileName="FORMUS~5.CLA|FormUser$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\FormUser$5.class" SelfReg="false"/>
+    <ROW File="FormUser6.class" Component_="bglogin.jpg" FileName="FORMUS~6.CLA|FormUser$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\FormUser$6.class" SelfReg="false"/>
+    <ROW File="FormUser.class" Component_="bglogin.jpg" FileName="FORMUS~7.CLA|FormUser.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\FormUser.class" SelfReg="false"/>
+    <ROW File="FormUser.form" Component_="bglogin.jpg" FileName="FORMUS~1.FOR|FormUser.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\FormUser.form" SelfReg="false"/>
+    <ROW File="form_input1.class" Component_="bglogin.jpg" FileName="FORM_I~1.CLA|form_input$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\form_input$1.class" SelfReg="false"/>
+    <ROW File="form_input2.class" Component_="bglogin.jpg" FileName="FORM_I~2.CLA|form_input$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\form_input$2.class" SelfReg="false"/>
+    <ROW File="form_input3.class" Component_="bglogin.jpg" FileName="FORM_I~3.CLA|form_input$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\form_input$3.class" SelfReg="false"/>
+    <ROW File="form_input4.class" Component_="bglogin.jpg" FileName="FORM_I~4.CLA|form_input$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\form_input$4.class" SelfReg="false"/>
+    <ROW File="form_input5.class" Component_="bglogin.jpg" FileName="FORM_I~5.CLA|form_input$5.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\form_input$5.class" SelfReg="false"/>
+    <ROW File="form_input6.class" Component_="bglogin.jpg" FileName="FORM_I~6.CLA|form_input$6.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\form_input$6.class" SelfReg="false"/>
+    <ROW File="form_input7.class" Component_="bglogin.jpg" FileName="FORM_I~7.CLA|form_input$7.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\form_input$7.class" SelfReg="false"/>
+    <ROW File="form_input.class" Component_="bglogin.jpg" FileName="FORM_I~8.CLA|form_input.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\form_input.class" SelfReg="false"/>
+    <ROW File="form_input.form" Component_="bglogin.jpg" FileName="FORM_I~1.FOR|form_input.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\form_input.form" SelfReg="false"/>
+    <ROW File="form_output1.class" Component_="bglogin.jpg" FileName="FORM_O~1.CLA|form_output$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\form_output$1.class" SelfReg="false"/>
+    <ROW File="form_output2.class" Component_="bglogin.jpg" FileName="FORM_O~2.CLA|form_output$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\form_output$2.class" SelfReg="false"/>
+    <ROW File="form_output3.class" Component_="bglogin.jpg" FileName="FORM_O~3.CLA|form_output$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\form_output$3.class" SelfReg="false"/>
+    <ROW File="form_output4.class" Component_="bglogin.jpg" FileName="FORM_O~4.CLA|form_output$4.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\form_output$4.class" SelfReg="false"/>
+    <ROW File="form_output.class" Component_="bglogin.jpg" FileName="FORM_O~5.CLA|form_output.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\form_output.class" SelfReg="false"/>
+    <ROW File="form_output.form" Component_="bglogin.jpg" FileName="FORM_O~1.FOR|form_output.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\form_output.form" SelfReg="false"/>
+    <ROW File="login1.class" Component_="bglogin.jpg" FileName="LOGIN$~1.CLA|login$1.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\login$1.class" SelfReg="false"/>
+    <ROW File="login2.class" Component_="bglogin.jpg" FileName="LOGIN$~2.CLA|login$2.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\login$2.class" SelfReg="false"/>
+    <ROW File="login3.class" Component_="bglogin.jpg" FileName="LOGIN$~3.CLA|login$3.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\login$3.class" SelfReg="false"/>
+    <ROW File="login.class" Component_="bglogin.jpg" FileName="LOGIN~1.CLA|login.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\login.class" SelfReg="false"/>
+    <ROW File="login.form" Component_="bglogin.jpg" FileName="LOGIN~1.FOR|login.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\apotek_harda\login.form" SelfReg="false"/>
+    <ROW File="TugasKelompokDutaHadiAsfaRiski.class" Component_="TugasKelompokDutaHadiAsfaRiski.class" FileName="TUGASK~1.CLA|TugasKelompokDutaHadiAsfaRiski.class" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build\classes\tugas\kelompok\duta\hadi\asfa\riski\TugasKelompokDutaHadiAsfaRiski.class" SelfReg="false"/>
+    <ROW File="build.xml" Component_="build.xml" FileName="build.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="build.xml" SelfReg="false"/>
+    <ROW File="jcalendar1.4.jar" Component_="jcalendar1.4.jar" FileName="JCALEN~1.JAR|jcalendar-1.4.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="dist\lib\jcalendar-1.4.jar" SelfReg="false"/>
+    <ROW File="mysqlconnectorj9.3.0.jar" Component_="jcalendar1.4.jar" FileName="MYSQL-~1.JAR|mysql-connector-j-9.3.0.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="dist\lib\mysql-connector-j-9.3.0.jar" SelfReg="false"/>
+    <ROW File="README.TXT" Component_="README.TXT" FileName="README.TXT" Version="65535.65535.65535.65535" Attributes="0" SourcePath="dist\README.TXT" SelfReg="false"/>
+    <ROW File="Tugas_Kelompok_ApotekHarda_.jar" Component_="README.TXT" FileName="TUGAS_~1.JAR|Tugas_Kelompok_ApotekHarda_.jar" Version="65535.65535.65535.65535" Attributes="0" SourcePath="dist\Tugas_Kelompok_ApotekHarda_.jar" SelfReg="false"/>
+    <ROW File="manifest.mf" Component_="build.xml" FileName="manifest.mf" Version="65535.65535.65535.65535" Attributes="0" SourcePath="manifest.mf" SelfReg="false"/>
+    <ROW File="buildimpl.xml" Component_="buildimpl.xml" FileName="BUILD-~1.XML|build-impl.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="nbproject\build-impl.xml" SelfReg="false"/>
+    <ROW File="genfiles.properties" Component_="buildimpl.xml" FileName="GENFIL~1.PRO|genfiles.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="nbproject\genfiles.properties" SelfReg="false"/>
+    <ROW File="private.properties" Component_="private.properties" FileName="PRIVAT~1.PRO|private.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="nbproject\private\private.properties" SelfReg="false"/>
+    <ROW File="private.xml" Component_="private.properties" FileName="private.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="nbproject\private\private.xml" SelfReg="false"/>
+    <ROW File="project.properties" Component_="buildimpl.xml" FileName="PROJEC~1.PRO|project.properties" Version="65535.65535.65535.65535" Attributes="0" SourcePath="nbproject\project.properties" SelfReg="false"/>
+    <ROW File="project.xml" Component_="buildimpl.xml" FileName="project.xml" Version="65535.65535.65535.65535" Attributes="0" SourcePath="nbproject\project.xml" SelfReg="false"/>
+    <ROW File="bglogin.jpg_1" Component_="bglogin.jpg_1" FileName="bg-login.jpg" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\apotek_harda\bg-login.jpg" SelfReg="false"/>
+    <ROW File="dashboard_admin.form_1" Component_="bglogin.jpg_1" FileName="DASHBO~1.FOR|dashboard_admin.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\apotek_harda\dashboard_admin.form" SelfReg="false"/>
+    <ROW File="dashboard_admin.java" Component_="bglogin.jpg_1" FileName="DASHBO~1.JAV|dashboard_admin.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\apotek_harda\dashboard_admin.java" SelfReg="false"/>
+    <ROW File="DatabaseConnection.java" Component_="bglogin.jpg_1" FileName="DATABA~1.JAV|DatabaseConnection.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\apotek_harda\DatabaseConnection.java" SelfReg="false"/>
+    <ROW File="FormUser.form_1" Component_="bglogin.jpg_1" FileName="FORMUS~1.FOR|FormUser.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\apotek_harda\FormUser.form" SelfReg="false"/>
+    <ROW File="FormUser.java" Component_="bglogin.jpg_1" FileName="FORMUS~1.JAV|FormUser.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\apotek_harda\FormUser.java" SelfReg="false"/>
+    <ROW File="form_input.form_1" Component_="bglogin.jpg_1" FileName="FORM_I~1.FOR|form_input.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\apotek_harda\form_input.form" SelfReg="false"/>
+    <ROW File="form_input.java" Component_="bglogin.jpg_1" FileName="FORM_I~1.JAV|form_input.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\apotek_harda\form_input.java" SelfReg="false"/>
+    <ROW File="form_output.form_1" Component_="bglogin.jpg_1" FileName="FORM_O~1.FOR|form_output.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\apotek_harda\form_output.form" SelfReg="false"/>
+    <ROW File="form_output.java" Component_="bglogin.jpg_1" FileName="FORM_O~1.JAV|form_output.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\apotek_harda\form_output.java" SelfReg="false"/>
+    <ROW File="login.form_1" Component_="bglogin.jpg_1" FileName="LOGIN~1.FOR|login.form" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\apotek_harda\login.form" SelfReg="false"/>
+    <ROW File="login.java" Component_="bglogin.jpg_1" FileName="LOGIN~1.JAV|login.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\apotek_harda\login.java" SelfReg="false"/>
+    <ROW File="TugasKelompokDutaHadiAsfaRiski.java" Component_="TugasKelompokDutaHadiAsfaRiski.java" FileName="TUGASK~1.JAV|TugasKelompokDutaHadiAsfaRiski.java" Version="65535.65535.65535.65535" Attributes="0" SourcePath="src\tugas\kelompok\duta\hadi\asfa\riski\TugasKelompokDutaHadiAsfaRiski.java" SelfReg="false"/>
+    <ROW File="AplikasiApotekHarda.aip" Component_="build.xml" FileName="APLIKA~1.AIP|Aplikasi Apotek Harda.aip" Version="65535.65535.65535.65535" Attributes="0" SourcePath="Aplikasi Apotek Harda.aip" SelfReg="false"/>
+    <ROW File="AplikasiHarda.exe" Component_="AplikasiHarda.exe" FileName="APLIKA~1.EXE|Aplikasi Harda.exe" Version="65535.65535.65535.65535" Attributes="0" SourcePath="&lt;AI_STUBS_64&gt;aijclw.exe" SelfReg="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BootstrOptComponent">
+    <ROW BootstrOptKey="GlobalOptions" DownloadFolder="[AppDataFolder][|Manufacturer]\[|ProductName]\prerequisites" Options="2"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.BuildComponent">
+    <ROW BuildKey="DefaultBuild" BuildName="DefaultBuild" BuildOrder="1" BuildType="0" Languages="id" InstallationType="4" UseLargeSchema="true"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.DictionaryComponent">
+    <ROW Path="&lt;AI_DICTS&gt;ui.ail"/>
+    <ROW Path="&lt;AI_DICTS&gt;ui_id.ail"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.FragmentComponent">
+    <ROW Fragment="CommonUI.aip" Path="&lt;AI_FRAGS&gt;CommonUI.aip"/>
+    <ROW Fragment="FolderDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\FolderDlg.aip"/>
+    <ROW Fragment="MaintenanceTypeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceTypeDlg.aip"/>
+    <ROW Fragment="MaintenanceWelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\MaintenanceWelcomeDlg.aip"/>
+    <ROW Fragment="SequenceDialogs.aip" Path="&lt;AI_THEMES&gt;classic\fragments\SequenceDialogs.aip"/>
+    <ROW Fragment="Sequences.aip" Path="&lt;AI_FRAGS&gt;Sequences.aip"/>
+    <ROW Fragment="StaticUIStrings.aip" Path="&lt;AI_FRAGS&gt;StaticUIStrings.aip"/>
+    <ROW Fragment="Themes.aip" Path="&lt;AI_FRAGS&gt;Themes.aip"/>
+    <ROW Fragment="UI.aip" Path="&lt;AI_THEMES&gt;classic\fragments\UI.aip"/>
+    <ROW Fragment="Validation.aip" Path="&lt;AI_FRAGS&gt;Validation.aip"/>
+    <ROW Fragment="VerifyRemoveDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRemoveDlg.aip"/>
+    <ROW Fragment="VerifyRepairDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\VerifyRepairDlg.aip"/>
+    <ROW Fragment="WelcomeDlg.aip" Path="&lt;AI_THEMES&gt;classic\fragments\WelcomeDlg.aip"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiBinaryComponent">
+    <ROW Name="aicustact.dll" SourcePath="&lt;AI_CUSTACTS&gt;aicustact.dll"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiControlEventComponent">
+    <ROW Dialog_="WelcomeDlg" Control_="Next" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="FolderDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="FolderDlg" Control_="Back" Event="NewDialog" Argument="WelcomeDlg" Condition="AI_INSTALL" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_INSTALL" Ordering="197"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="FolderDlg" Condition="AI_INSTALL" Ordering="201"/>
+    <ROW Dialog_="MaintenanceWelcomeDlg" Control_="Next" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="99"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_MAINT" Ordering="101"/>
+    <ROW Dialog_="CustomizeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_MAINT" Ordering="198"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="202"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="ChangeButton" Event="NewDialog" Argument="CustomizeDlg" Condition="AI_MAINT" Ordering="501"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceWelcomeDlg" Condition="AI_MAINT" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RemoveButton" Event="NewDialog" Argument="VerifyRemoveDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="1"/>
+    <ROW Dialog_="MaintenanceTypeDlg" Control_="RepairButton" Event="NewDialog" Argument="VerifyRepairDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="601"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Back" Event="NewDialog" Argument="MaintenanceTypeDlg" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="1"/>
+    <ROW Dialog_="VerifyRepairDlg" Control_="Repair" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Repair&quot;" Ordering="399" Options="1"/>
+    <ROW Dialog_="VerifyRemoveDlg" Control_="Remove" Event="EndDialog" Argument="Return" Condition="AI_MAINT AND InstallMode=&quot;Remove&quot;" Ordering="299" Options="1"/>
+    <ROW Dialog_="PatchWelcomeDlg" Control_="Next" Event="NewDialog" Argument="VerifyReadyDlg" Condition="AI_PATCH" Ordering="201"/>
+    <ROW Dialog_="ResumeDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_RESUME" Ordering="299"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Install" Event="EndDialog" Argument="Return" Condition="AI_PATCH" Ordering="199"/>
+    <ROW Dialog_="VerifyReadyDlg" Control_="Back" Event="NewDialog" Argument="PatchWelcomeDlg" Condition="AI_PATCH" Ordering="203"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCreateFolderComponent">
+    <ROW Directory_="APPDIR" Component_="APPDIR" ManualDelete="true"/>
+    <ROW Directory_="SHORTCUTDIR" Component_="SHORTCUTDIR" ManualDelete="false"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiCustActComponent">
+    <ROW Action="AI_DOWNGRADE" Type="19" Target="4010"/>
+    <ROW Action="AI_DpiContentScale" Type="1" Source="aicustact.dll" Target="DpiContentScale"/>
+    <ROW Action="AI_EnableDebugLog" Type="321" Source="aicustact.dll" Target="EnableDebugLog"/>
+    <ROW Action="AI_InstallModeCheck" Type="1" Source="aicustact.dll" Target="UpdateInstallMode" WithoutSeq="true"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Type="65" Source="aicustact.dll" Target="PrepareUpgrade"/>
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Type="65" Source="aicustact.dll" Target="PreserveInstallType"/>
+    <ROW Action="AI_RESTORE_LOCATION" Type="65" Source="aicustact.dll" Target="RestoreLocation"/>
+    <ROW Action="AI_ResolveKnownFolders" Type="1" Source="aicustact.dll" Target="AI_ResolveKnownFolders"/>
+    <ROW Action="AI_SHOW_LOG" Type="65" Source="aicustact.dll" Target="LaunchLogFile" WithoutSeq="true"/>
+    <ROW Action="AI_STORE_LOCATION" Type="51" Source="ARPINSTALLLOCATION" Target="[APPDIR]"/>
+    <ROW Action="SET_APPDIR" Type="307" Source="APPDIR" Target="[ProgramFilesFolder][Manufacturer]\[ProductName]"/>
+    <ROW Action="SET_SHORTCUTDIR" Type="307" Source="SHORTCUTDIR" Target="[ProgramMenuFolder][ProductName]"/>
+    <ROW Action="SET_TARGETDIR_TO_APPDIR" Type="51" Source="TARGETDIR" Target="[APPDIR]"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiFeatCompsComponent">
+    <ROW Feature_="MainFeature" Component_="APPDIR"/>
+    <ROW Feature_="MainFeature" Component_="ProductInformation"/>
+    <ROW Feature_="MainFeature" Component_="builtjar.properties"/>
+    <ROW Feature_="MainFeature" Component_="netbeans_automatic_build"/>
+    <ROW Feature_="MainFeature" Component_="bglogin.jpg"/>
+    <ROW Feature_="MainFeature" Component_="TugasKelompokDutaHadiAsfaRiski.class"/>
+    <ROW Feature_="MainFeature" Component_="build.xml"/>
+    <ROW Feature_="MainFeature" Component_="jcalendar1.4.jar"/>
+    <ROW Feature_="MainFeature" Component_="README.TXT"/>
+    <ROW Feature_="MainFeature" Component_="buildimpl.xml"/>
+    <ROW Feature_="MainFeature" Component_="private.properties"/>
+    <ROW Feature_="MainFeature" Component_="bglogin.jpg_1"/>
+    <ROW Feature_="MainFeature" Component_="TugasKelompokDutaHadiAsfaRiski.java"/>
+    <ROW Feature_="MainFeature" Component_="AplikasiHarda.exe"/>
+    <ROW Feature_="MainFeature" Component_="SHORTCUTDIR"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiIniFileComponent">
+    <ROW IniFile="ApplicationType" FileName="APLIKA~2.INI|Aplikasi Harda.ini" DirProperty="APPDIR" Section="Application" Key="Application Type" Value="gui" Action="0" Component_="AplikasiHarda.exe"/>
+    <ROW IniFile="ClassPath" FileName="APLIKA~2.INI|Aplikasi Harda.ini" DirProperty="APPDIR" Section="Class Path" Key="Class Path" Value="[TugasKelompokHarda_Dir];[#mysqlconnectorj9.3.0.jar];[#jcalendar1.4.jar];" Action="0" Component_="AplikasiHarda.exe"/>
+    <ROW IniFile="EmbeddedJar" FileName="APLIKA~2.INI|Aplikasi Harda.ini" DirProperty="APPDIR" Section="Application" Key="Embedded Jar" Value="yes" Action="0" Component_="AplikasiHarda.exe"/>
+    <ROW IniFile="FailureCheck" FileName="APLIKA~2.INI|Aplikasi Harda.ini" DirProperty="APPDIR" Section="Application" Key="Failure Check" Value="yes" Action="0" Component_="AplikasiHarda.exe"/>
+    <ROW IniFile="MainClass" FileName="APLIKA~2.INI|Aplikasi Harda.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Main Class" Value="apotek_harda.login" Action="0" Component_="AplikasiHarda.exe"/>
+    <ROW IniFile="MaximumVersion" FileName="APLIKA~2.INI|Aplikasi Harda.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Maximum Version" Value="any" Action="0" Component_="AplikasiHarda.exe"/>
+    <ROW IniFile="MinimumVersion" FileName="APLIKA~2.INI|Aplikasi Harda.ini" DirProperty="APPDIR" Section="Java Runtime Environment" Key="Minimum Version" Value="any" Action="0" Component_="AplikasiHarda.exe"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstExSeqComponent">
+    <ROW Action="AI_DOWNGRADE" Condition="AI_NEWERPRODUCTFOUND AND (UILevel &lt;&gt; 5)" Sequence="210"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_STORE_LOCATION" Condition="(Not Installed) OR REINSTALL" Sequence="1501"/>
+    <ROW Action="AI_PREPARE_UPGRADE" Condition="AI_UPGRADE=&quot;No&quot; AND (Not Installed)" Sequence="1399"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiInstallUISequenceComponent">
+    <ROW Action="AI_PRESERVE_INSTALL_TYPE" Sequence="199"/>
+    <ROW Action="AI_RESTORE_LOCATION" Condition="APPDIR=&quot;&quot;" Sequence="749"/>
+    <ROW Action="AI_ResolveKnownFolders" Sequence="53"/>
+    <ROW Action="AI_DpiContentScale" Sequence="52"/>
+    <ROW Action="AI_EnableDebugLog" Sequence="51"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiJavaComponent">
+    <ROW Name="Aplikasi Harda.exe" Launcher="AplikasiHarda.exe" MainClass="MainClass" ClassPath="ClassPath" JREMin="MinimumVersion" JREMax="MaximumVersion" IconPath="D:\download\Rangga_PekanUAS\icon.ico" AppType="ApplicationType" PlusList="APPDIR;" MinusList="#AplikasiHarda.exe;" MacDescription="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2025" MacBundleId="com.[|Manufacturer].[|ProductName].[|CurrentJavaProductName]" FailureCheck="FailureCheck" UACExecutionLevel="2" Platform64="true" EmbJarPath="dist\Tugas_Kelompok_ApotekHarda_.jar" HasEmbJar="EmbeddedJar"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiLaunchConditionsComponent">
+    <ROW Condition="((VersionNT &lt;&gt; 501) AND (VersionNT &lt;&gt; 502))" Description="[ProductName] tidak dapat diinstal di [WindowsTypeNT5XDisplay]." DescriptionLocId="AI.LaunchCondition.NoNT5X" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 400)" Description="[ProductName] tidak dapat diinstal di [WindowsTypeNT40Display]." DescriptionLocId="AI.LaunchCondition.NoNT40" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 500)" Description="[ProductName] tidak dapat diinstal di [WindowsTypeNT50Display]." DescriptionLocId="AI.LaunchCondition.NoNT50" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="(VersionNT &lt;&gt; 600)" Description="[ProductName] tidak dapat diinstal di [WindowsTypeNT60Display]." DescriptionLocId="AI.LaunchCondition.NoNT60" IsPredefined="true" Builds="DefaultBuild"/>
+    <ROW Condition="VersionNT" Description="[ProductName] tidak dapat diinstal di [WindowsType9XDisplay]." DescriptionLocId="AI.LaunchCondition.No9X" IsPredefined="true" Builds="DefaultBuild"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiRegsComponent">
+    <ROW Registry="Manufacturer" Root="-1" Key="Software\[Manufacturer]" Name="\"/>
+    <ROW Registry="Path" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Path" Value="[APPDIR]" Component_="ProductInformation"/>
+    <ROW Registry="ProductName" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="\"/>
+    <ROW Registry="Software" Root="-1" Key="Software" Name="\"/>
+    <ROW Registry="Version" Root="-1" Key="Software\[Manufacturer]\[ProductName]" Name="Version" Value="[ProductVersion]" Component_="ProductInformation"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiShortsComponent">
+    <ROW Shortcut="AplikasiHarda" Directory_="SHORTCUTDIR" Name="APLIKA~1|Aplikasi Harda" Component_="AplikasiHarda.exe" Target="[#AplikasiHarda.exe]" Description="[|CurrentJavaProductName] [|ProductVersion] © [|Manufacturer], Inc, 2025" Hotkey="0" IconIndex="0" ShowCmd="1"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiThemeComponent">
+    <ATTRIBUTE name="UsedTheme" value="classic"/>
+  </COMPONENT>
+  <COMPONENT cid="caphyon.advinst.msicomp.MsiUpgradeComponent">
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="0.0.1" VersionMax="[|ProductVersion]" Attributes="257" ActionProperty="OLDPRODUCTS"/>
+    <ROW UpgradeCode="[|UpgradeCode]" VersionMin="[|ProductVersion]" Attributes="2" ActionProperty="AI_NEWERPRODUCTFOUND"/>
+  </COMPONENT>
+</DOCUMENT>
